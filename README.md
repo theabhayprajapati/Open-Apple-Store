@@ -1,27 +1,54 @@
-# Next.js + Tailwind CSS Example
+# Open Apple Store Api
+>  A simple project to helping developer's to access open api's.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## How to use:
 
-## Preview
+***`Baseurl`*** : *`https://oas.vercel.app/api`*
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+```javascript
+let res =   fetch('https://oas.vercel.app/api/all')
+    .then(res => res.json())
+    .then(res => {
+        console.log(res)
+    });
+alert(s);
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### /all
+> it provides all the data from the database, from all the categories without filteration
+### /category/:category
+> here you can add category for your output. and result will be from that category only.
+> example: + `/category/watch`
+>          + `/category/iphone`
+>          + `/category/macbook`
+>          + `/category/airpods`
+>          + `/category/ipad`
+
+### /:_Id
+> for getting results realted to single product the /:_Id is used.
+> example: /6228d7ac2e00fb1164b2df27
+```json
+{
+    "data": {
+        "_id": "6228d7ac2e00fb1164b2df27",
+        "product_name": "MacBook Pro",
+        "product_price": {
+            "IN": 109000,
+            "US": 999,
+            "GBP": 899
+    },
+    "product_description": "Id culpa aliquip ipsum excepteur sunt incididunt laboris magna incididunt nostrud.",
+    "createdAt": {
+        "$timestamp": "7073140344224743438"
+    }
+}
+}
+```
+
+
+## Contributors:
+[`Abhay Prajapati`]('https://twitter.com/AbhayPrajapati_')
+## we are counting on you.
+
+## Thanks and Share your project that you have create with this data we are very happy to see.
+
