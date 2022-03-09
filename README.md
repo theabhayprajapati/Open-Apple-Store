@@ -3,16 +3,7 @@
 
 ## How to use:
 
-***`Baseurl`*** : *`https://oas.vercel.app/api`*
-
-```javascript
-let res =   fetch('https://oas.vercel.app/api/all')
-    .then(res => res.json())
-    .then(res => {
-        console.log(res)
-    });
-alert(s);
-```
+***`Baseurl`*** : ***`https://oas.vercel.app/api`***
 
 ### /all
 > it provides all the data from the database, from all the categories without filteration
@@ -47,8 +38,11 @@ alert(s);
 
 
 ## Contributors:
-[`Abhay Prajapati`]('https://twitter.com/AbhayPrajapati_')
-## we are counting on you.
+***[`Abhay Prajapati`](https://twitter.com/AbhayPrajapati_')***
+
+
+
+we are counting on you...
 
 ## Thanks and Share your project that you have create with this data we are very happy to see.
 
