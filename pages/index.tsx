@@ -89,17 +89,3 @@ const Home: NextPage = ({ clientPromise }: any) => {
 }
 
 export default Home
-
-export const getServerSideProps = async (context: any) => {
-  let isConnected = false;
-  const data = await clientPromise
-  if (data) {
-    isConnected = true
-  }
-  console.log(isConnected)
-  return {
-    props: {
-      isConnected
-    }
-  }
-}
