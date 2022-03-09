@@ -38,9 +38,9 @@
 
 
 ## Contributors:
-***[`Abhay Prajapati`](https://twitter.com/AbhayPrajapati_')***
 
 
+**[`Abhay Prajapati`](https://www.twitter.com/AbhayPrajapati_)**
 
 we are counting on you...
 
