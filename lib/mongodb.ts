@@ -1,14 +1,14 @@
 import { MongoClient } from 'mongodb'
 
-const uri = process.env.MONGODB_URI
-const options = {
+const uri:any = process.env.MONGODB_URI
+const options:any = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
 }
 
-let client
-let clientPromise
+let client:any;
+let clientPromise:any;
 
 if (!process.env.MONGODB_URI) {
     throw new Error('Please add your Mongo URI to .env.local')
@@ -17,7 +17,8 @@ if (!process.env.MONGODB_URI) {
 if (process.env.NODE_ENV === 'development') {
     // In development mode, use a global variable so that the value
     // is preserved across module reloads caused by HMR (Hot Module Replacement).
-    if (!global._mongoClientPromise) {
+    let global:any 
+    if (!global._mongoClientPromise ) {
         client = new MongoClient(uri, options)
         global._mongoClientPromise = client.connect()
     }
