@@ -9,7 +9,7 @@ import clientPromise from '../lib/mongodb'
 
 const Home: NextPage = () => {
   // fetch api
-  
+
 
   return (
 
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       </main>
       <main>
         <div className="md:text-8xl text-5xl min-h-screen grid place-items-center font-extrabold text-white">
-          That's probably enough for now. What are you waiting for your project?👍
+          That's probably enough for now. We are waiting for your project ?👍
         </div>
       </main>
     </div>

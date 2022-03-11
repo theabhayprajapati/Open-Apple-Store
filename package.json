@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdx-js/react": "^2.0.0",
     "axios": "^0.26.0",
     "mongodb": "^4.4.1",
     "next": "latest",

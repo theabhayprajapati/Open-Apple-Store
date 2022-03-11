@@ -19,7 +19,7 @@ const Code = () => {
             <span className="text-pink-500">
                 (
             </span>
-            <span className="text-purple-500">
+            <span className="text-purple-500 break-words">
                 'https://oas.vercel.app/api/all'
             </span>
             <span className="text-pink-500">

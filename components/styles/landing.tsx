@@ -20,8 +20,7 @@ const Landing = () => {
                 </p>
                 <div className="text-xl flex gap-2 mt-5 justify-between font-bold focus:ring-blue-200">
                     <button className="border-2 w-full rounded-sm py-2 font-semibold"
-                        onClick={() => router.push('/manual')}
-
+                        onClick={() => router.push('https://github.com/theabhayprajapati/Open-Apple-Store#readme')}
                     >
                         Manual
                     </button>

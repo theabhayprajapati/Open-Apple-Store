@@ -9,10 +9,8 @@ export default async function handler(req, res, next) {
     // get all data form mongodb
     const data = await db.collection('open-apple-store').find({
         // _id: new ObjectId(query)
-        modelname: 'iPhone 13 Pro'
     }).toArray()
-    // console.log(data.createdAt, "Product Name")
-    console.log(data[0].series)
+    
     res.json({
         data
     })

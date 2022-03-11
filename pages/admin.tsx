@@ -32,7 +32,7 @@ const AdminForOAS = () => {
 
     }
     return (
-        <div className="">
+        <div className="bg-white">
             <Head>
                 <title>
                     Admin | Open Apple Store
