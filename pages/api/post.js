@@ -17,10 +17,7 @@ export default async function handler(req, res) {
     console.log()
     if (method === 'POST') {
         const data = await db.collection('open-apple-store').insertOne(
-            {
-                ...body,
-                createdAt: new Date()
-            }
+            body
         )
     }
 

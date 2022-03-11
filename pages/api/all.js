@@ -7,13 +7,12 @@ export default async function handler(req, res, next) {
     const client = await clientPromise
     const db = await client.db('products')
     // get all data form mongodb
-    const data = await db.collection('open-apple-store').find({}).toArray()
+    const data = await db.collection('open-apple-store').find({
+        // _id: new ObjectId(query)
+        modelname: 'iPhone 13 Pro'
+    }).toArray()
     // console.log(data.createdAt, "Product Name")
-    data.map(
-        (item) => {
-            console.log(item.createdAt, "Product Name")
-        }
-    )
+    console.log(data[0].series)
     res.json({
         data
     })
