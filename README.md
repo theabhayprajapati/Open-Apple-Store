@@ -21,9 +21,9 @@
 ### /series/:series
 
 >**baseurl** **`/series/MacBook Air`**
->🧑‍💻every product has series name such as iPhone 13 has series name such as iPhone 13, under iPhone 13 two products come iPhone 13 & iPhone 13 mini.
->>They are `case sentitive` 😓 so iphone_13, iPhone_13 won't work,
->correct way /series/iPhone 13
+>🧑‍💻every product has series name such as iPhone 13 has series name such as iPhone 13, under  iPhone 13 two products come iPhone 13 & iPhone 13 mini.
+>>They are `case sentitive` 😓 so iphone_13, iPhone_13 won't work ❌,
+>correct way /series/iPhone 13 ✅
 >without `%20`
 ### /:_Id
 >**baseurl** **`/6228d7ac2e00fb1164b2df27`**
