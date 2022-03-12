@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className="flex gap-3 text-gray-400 ">
                 <button
-                    onClick={() => router.push('/manual')}
+                    onClick={() => router.push('https://github.com/theabhayprajapati/Open-Apple-Store#readme')}
                 >
                     Manual
                 </button>
