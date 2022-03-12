@@ -24,10 +24,10 @@ const Header = () => {
                     Github
                 </button>
                 <button
-                    onClick={() => router.push('/about')}
+                    onClick={() => router.push('/api/all')}
 
                 >
-                    About
+                    API
                 </button>
             </div>
         </div>

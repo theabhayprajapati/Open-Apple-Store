@@ -11,7 +11,7 @@ export default async (req, res, next) => {
     })
     // solve the array literal error.
     const m = JSON.parse(JSON.stringify(data))
-    console.log(m.body, "m")
+
     res.json({
         data: m
     })
