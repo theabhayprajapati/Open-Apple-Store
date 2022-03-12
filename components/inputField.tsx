@@ -71,7 +71,7 @@ const InputFeild = () => {
 
 
     return (
-        <div>
+        <div className='flex flex-col md:flex-row flex-wrap gap-4 text-xl'>
             <input type="text" name="modelname" placeholder="Model Name" onChange={(e) => handleChange(e)} />
             <input type="text" name="IN" placeholder="IN" onChange={(e) => handlePrices(e)} />
             <input type="text" name="USD" placeholder="US" onChange={(e) => handlePrices(e)} />
@@ -80,6 +80,7 @@ const InputFeild = () => {
             <input type="text" name="category" placeholder="Category" onChange={(e) => handleChange(e)} />
             <input type="text" name="series" placeholder="Series" onChange={(e) => handleChange(e)} />
             <button
+                className='py-2 px-4 bg-orange-500 text-white focus:ring-white rounded-lg'
                 onClick={() => addtoIphoneState(product)}
             >Add</button>
         </div>

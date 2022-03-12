@@ -5,3 +5,25 @@
 body {
     background-color: #121212
 }
+
+@layer components {
+    .select2-dropdown {
+      @apply rounded-b-lg shadow-md;
+    }
+    .green {
+        @apply text-green-500 ;
+    }
+    .pink {
+        @apply text-pink-500 ;
+    }
+    .purple {
+        @apply text-purple-500 ;
+    }
+    .blue {
+        @apply text-blue-500 ;
+    }
+    .white{
+        @apply text-white ;
+    }
+    /* ... */
+  }

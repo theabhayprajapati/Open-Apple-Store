@@ -46,6 +46,12 @@ const AddImages = () => {
         ])
     }
 
+    const removeimage = (index: number) => {
+        setimages([
+            ...images.slice(0, index),
+            ...images.slice(index + 1),
+        ])
+    }
 
 
     const addtooriginal = () => {
@@ -64,21 +70,24 @@ const AddImages = () => {
 
     return (
         <div>
-            <main>
+            <main className='text-xl flex flex-col md:flex-row flex-wrap'>
                 {
                     images.map((item: any, index: number) => {
                         return (
-                            <div key={index}>
+                            <div key={index} className='text-2xl'>
                                 <input type="text" placeholder='url' name="url" onChange={(e) => updateimages(e, index)} />
                                 <input type="text" placeholder='Enter title' name="title" onChange={(e) => updateimages(e, index)} />
                                 <input type="text" placeholder='Indian price' name="IN" onChange={(e) => updatePrices(e, index)} />
                                 <input type="text" placeholder='US Price' name="US" onChange={(e) => updatePrices(e, index)} />
+                                {/* remove image buttonb */}
+                                <button className='bg-red-500 px-4 py-2 rounded-lg text-white focus:ring ring-white' onClick={() => removeimage(index)}>Remove</button>
+
                             </div>
                         )
                     })
                 }
-                <button onClick={addmore}>Add More</button>
-                <button onClick={addtooriginal}>Add to Original</button>
+                <button onClick={addmore} className='bg-blue-500 px-4 py-2 rounded-lg text-white focus:ring ring-white'>Add More</button>
+                <button onClick={addtooriginal} className='bg-orange-500 px-4 py-2 rounded-lg text-white focus:ring ring-white'>Add to Original</button>
             </main>
             <div>
                 <h1>{OrigianliPhoneState?.images?.length}</h1>

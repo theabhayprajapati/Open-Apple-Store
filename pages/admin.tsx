@@ -12,12 +12,14 @@ const product = {
 }
 const AdminForOAS = () => {
     // TODO: make a post request with fetch
-
+    // button status 
+    const [buttonstatus, setbuttonstatus] = useState(false)
     // make a product object
     const iPhoneOriginal = useRecoilValue(iPhoneState)
 
     const addTomongo = async (iPhoneOriginal: any, e: any) => {
         e.preventDefault()
+        setbuttonstatus(true)
         const response = await fetch('/api/post', {
             method: 'POST',
             headers: {
@@ -28,8 +30,8 @@ const AdminForOAS = () => {
         const body = await response.json()
         console.log(body, 'we are in the addTomongo function')
         console.log(iPhoneOriginal, 'we are in the addTomongo function');
-
-
+        alert('we have this check console.')
+        setbuttonstatus(false)
     }
     return (
         <div className="bg-white">
@@ -45,6 +47,8 @@ const AdminForOAS = () => {
                 <AddImages />
                 <Colors />
                 <button
+                    disabled={buttonstatus}
+                    className='py-2 px-4 bg-orange-500 text-white focus:ring-white rounded-lg'
                     onClick={(e) => addTomongo(iPhoneOriginal, e)}
                 >
                     Add to Mongo
