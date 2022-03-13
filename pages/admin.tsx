@@ -48,7 +48,7 @@ const AdminForOAS = () => {
             </Head>
             <Header />
             {
-                session?.user?.email === 'theabhayprajapati@outlook.com' ? (
+                session?.user?.email === 'theabhayprajapati@gmail.com' ? (
                     <main className='bg-white max-w-6xl mx-auto border-2  border-black p-4' >
                         {/* adding modelname, price, category, series more. */}
                         <InputFeild />
