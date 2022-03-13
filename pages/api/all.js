@@ -10,7 +10,7 @@ export default async function handler(req, res, next) {
     const data = await db.collection('open-apple-store').find({
         // _id: new ObjectId(query)
     }).toArray()
-
+    console.log(data);
     res.json({
         data
     })

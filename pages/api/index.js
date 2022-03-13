@@ -6,7 +6,7 @@ export default async function handler(req, res, next) {
     const { query } = req
     console.log(query)
 
-    
+
     // update query.category value
     // uppercase first letter of query.category value
     // query.category = 
