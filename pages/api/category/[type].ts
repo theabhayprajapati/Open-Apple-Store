@@ -1,15 +1,17 @@
 import { ObjectId } from "mongodb"
 import clientPromise from "../../../lib/mongodb"
+import type { NextApiRequest, NextApiResponse } from 'next'
 
 
-export default async function handler(req, res, next) {
+export default async function handler(req:NextApiRequest, res:NextApiResponse) {
     // const query = req.query.moviedetails
     const { query } = req
     console.log(query.type, 'query.type🧠')
 
     console.log(req)
-    let name = query.type
-    function updatename(name) {
+    let name:any = query.type
+    console.log(name, 'name🧠')
+    function updatename(name:any) {
         if (name === 'mac') {
             name = name.charAt(0).toUpperCase() + name.slice(1)
             return Object.keys(query).forEach(function (key) {

@@ -1,7 +1,8 @@
 import { ObjectId } from "mongodb"
 import clientPromise from "../../lib/mongodb"
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async function handler(req, res, next) {
+export default async function handler(req:NextApiRequest, res:NextApiResponse) {
     // const query = req.query.moviedetails
     console.log(req)
     const client = await clientPromise
