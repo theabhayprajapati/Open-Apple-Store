@@ -58,9 +58,9 @@ Series = ["MacBook Air","MacBook Pro" ,"MacBook Pro 13","MacBook Pro 14","MacBoo
 
 ## Tech Stack
 
-**Client:** [`Next.js`]("https://github.com/vercel/next.js/"), [`Recoil`]("https://github.com/facebookexperimental/Recoil"), [`TailwindCSS`]("https://github.com/tailwindlabs/tailwindcss")
+**Client:** [`Next.js`](https://github.com/vercel/next.js/), [`Recoil`](https://github.com/facebookexperimental/Recoil), [`TailwindCSS`](https://github.com/tailwindlabs/tailwindcss)
 
-**Server:**  [`MongoDB`]("https://github.com/mongodb/mongo")
+**Server:**  [`MongoDB`](https://github.com/mongodb/mongo)
 
 
 ## Authors
