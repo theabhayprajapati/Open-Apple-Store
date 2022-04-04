@@ -18,7 +18,7 @@ Open Apple Store has data of almost all Apple Store's Products.
 
 returns everything in the database.
 
-#### Get Single item
+#### Get Single item based on id
 
 ```http
   GET /api/${id}
