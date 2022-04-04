@@ -22,8 +22,6 @@ export default async function handler(req, res, next) {
             query.type = name
         }
         )
-
-
     }
     updatename(name)
     // upppercase the first 
@@ -40,8 +38,11 @@ export default async function handler(req, res, next) {
     }).toArray()
 
     console.log(data)
-
-
-    res.json(data)
+    // parse data to json
+    // JSON Stringify
+    const m = JSON.parse(JSON.stringify(data))
+    console.log(m)
+    res.json({ data: m })
+    
 }
 

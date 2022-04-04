@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
   return (
 
-    <div className="relative min-w-full md:p-10">
+    <div className="relative min-w-full md:p-10 selection:bg-[#EA48A0]">
       <Head>
         <title>
           Home | Open Apple Store
@@ -33,9 +33,12 @@ const Home: NextPage = () => {
       </main>
       <LowerLanding />
       <div className='grid place-items-center'>
-        <h1 className='text-blue-500 cursor-pointer hover:scale-95 focus:scale-95 transform transition-all duration-200'>
-          @abhayprajapati_
-        </h1>
+        <div className="flex gap-3">
+          <img src="/favicon.ico" alt="" />
+          <h1 className='text-blue-500 cursor-pointer hover:scale-95 focus:scale-95 transform transition-all duration-200'>
+            @abhayprajapati_
+          </h1>
+        </div>
       </div>
     </div>
   )

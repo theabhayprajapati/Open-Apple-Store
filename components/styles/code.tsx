@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Code = () => {
+const Code = () => {    
     return (
-        <code className='flex flex-col'>
+        <code className='flex flex-col select-none'>
             <div>
                 <span className="text-pink-500">
                     const {''}

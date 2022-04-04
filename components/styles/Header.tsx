@@ -7,9 +7,10 @@ const Header = () => {
         <div className="flex justify-between text-gray-200 font-medium m-3 text-xl ">
             <div>
                 <button
+                
                     onClick={() => router.push('/')}
                 >
-                    OAS
+                    <img src="/favicon.ico" className='h-[30px]' alt="" />
                 </button>
             </div>
             <div className="flex gap-3 text-gray-400 ">

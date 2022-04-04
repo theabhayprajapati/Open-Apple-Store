@@ -20,12 +20,12 @@ const Landing = () => {
                     Open Apple Store has data of almost all Apple Store's Products.
                 </p>
                 <div className="text-xl flex gap-2 mt-5 justify-between font-bold focus:ring-blue-200">
-                    <button className="border-2 w-full hover:scale-95 focus:scale-95 transition duration-200 rounded-sm py-2 font-semibold"
+                    <button className="border-2 w-full hover:scale-95 hover:bg-white hover:text-black hover:border-black focus:scale-95 transition duration-200 rounded-sm py-2 font-semibold"
                         onClick={() => router.push('https://github.com/theabhayprajapati/Open-Apple-Store#readme')}
                     >
                         Manual
                     </button>
-                    <button className="w-full bg-blue-500 hover:scale-95 focus:scale-95 transition duration-200 transform rounded-sm  py-2 font-semibold"
+                    <button className="w-full bg-blue-500 hover:bg-white hover:text-blue-500 hover:border-blue-500 hover:scale-95 focus:scale-95 transition duration-200 transform rounded-sm  py-2 font-semibold"
                         onClick={() => router.push('https://github.com/theabhayprajapati/Open-Apple-Store')}
 
                     >
