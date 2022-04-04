@@ -18,7 +18,7 @@ const Connectivity = () => {
     }
     // remove connectivity
     
-    // add to original state
+    // add to original statepinde
     const addtooriginal = () => {
         setOrigianliPhoneState({
             ...OrigianliPhoneState,

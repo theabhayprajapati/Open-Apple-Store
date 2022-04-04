@@ -7,7 +7,8 @@ const Landing = () => {
         <div className='md:text-6xl  text-4xl font-extrabold '>
 
             <h1>
-                Apple Store's <span className='text-orange-500'>
+                <span className='text-[#A2AAAD]'>
+                    Apple Store's</span> <span className='text-orange-500'>
                     data
                 </span>  for your next <span className="text-green-500">
                     project</span>, simply gonna to be <span className="text-blue-300">
