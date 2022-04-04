@@ -4,7 +4,7 @@
 
 ## How to use:
 
-***`BaseUrl`*** : **`https://oas.vercel.app/api`**
+***`BaseUrl`*** : **[`oas.vercel.app/api`](https://oas.vercel.app/api)** 
 
 ### /all
 >***baseUrl*** **`/all`**
