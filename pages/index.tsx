@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Code from '../components/styles/code'
 import Header from '../components/styles/Header'
 import Landing from '../components/styles/landing'
+import LowerLanding from '../components/styles/lowerlanding'
 import clientPromise from '../lib/mongodb'
 
 const Home: NextPage = () => {
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
 
   return (
 
-    <div className="min-w-full md:p-10">
+    <div className="relative min-w-full md:p-10">
       <Head>
         <title>
           Home | Open Apple Store
@@ -30,24 +31,15 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <main className='max-w-5xl mx-auto '>
-        <div>
-          <h1 className='text-8xl font-extrabold text-black'>
-            No API keys Ever, JUST <span className="text-blue-500">
-              FETCH.</span>
-          </h1>
-          <h1 className='text-white font-bold items-center w-full mx-auto grid place-items-center md:mt-5 '>
-            i can run everywhere
-          </h1>
-        </div>
-      </main>
-      <main>
-        <div className="md:text-8xl text-5xl min-h-screen grid place-items-center font-extrabold text-white">
-          That's probably enough for now. We are waiting for your project ?👍
-        </div>
-      </main>
+      <LowerLanding />
+      <div className='grid place-items-center'>
+        <h1 className='text-blue-500 cursor-pointer hover:scale-95 focus:scale-95 transform transition-all duration-200'>
+          @abhayprajapati_
+        </h1>
+      </div>
     </div>
   )
 }
 
 export default Home
+

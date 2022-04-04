@@ -6,7 +6,9 @@ import React, { useEffect, useState } from 'react'
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { iPhoneState } from '../atoms/iphoneatoms';
 import AddImages from '../components/addimages';
+import CaseFieldInput from '../components/casefield';
 import Colors from '../components/colors';
+import Connectivity from '../components/connectivitity';
 import InputFeild from '../components/inputField';
 import Specs from '../components/specs';
 import Header from '../components/styles/Header';
@@ -55,6 +57,8 @@ const AdminForOAS = () => {
                         <Specs />
                         <AddImages />
                         <Colors />
+                        <CaseFieldInput />
+                        <Connectivity />
                         <button
                             disabled={buttonstatus}
                             className='py-2 px-4 bg-orange-500 text-white focus:ring-white rounded-lg'
