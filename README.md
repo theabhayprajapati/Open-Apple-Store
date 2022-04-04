@@ -1,57 +1,68 @@
 
-# Open Apple Store Api
->  A simple project to helping developer's to access open api's.
+# ![Fury](/public/favicon.ico) Open Source Apple Store
+<!-- image -->
 
-## How to use:
+Open Apple Store has data of almost all Apple Store's Products.
 
-***`BaseUrl`*** : ***`https://oas.vercel.app/api`***
+## API Reference
 
-### /all
->***baseUrl*** **`/all`**
-> it provides all the data from the database, from all the categories without filteration. 😊
-### /category/:category
->**baseurl** **`/category/iphone`**
-> here you can add category for your output. and result will be from that category only.
-> example: + `/category/watch`
->          + `/category/iphone`
->          + `/category/macbook`
->          + `/category/airpods`
->          + `/category/ipad`
+### Base Url
 
-### /series/:series
+``base url`` **[`oas.vercel.app/api`](https://oas.vercel.app/api)**
 
->**baseurl** **`/series/MacBook Air`**
->🧑‍💻every product has series name such as iPhone 13 has series name such as iPhone 13, under  iPhone 13 two products come iPhone 13 & iPhone 13 mini.
->>They are `case sentitive` 😓 so iphone_13, iPhone_13 won't work ❌,
->correct way /series/iPhone 13 ✅
->without `%20`
-### /:_Id
->**baseurl** **`/6228d7ac2e00fb1164b2df27`**
-> for getting results realted to single product the /:_Id is used.
-> example: /6228d7ac2e00fb1164b2df27,
-> these are id sentitive `fetch` with their respective id's.😅
-```json
-{
-    "data": {
-        "_id": "6228d7ac2e00fb1164b2df27",
-        "product_name": "MacBook Pro",
-        "product_price": {
-            "IN": 109000,
-            "US": 999,
-            "GBP": 899
-    },
-    "product_description": "Id culpa aliquip ipsum excepteur sunt incididunt laboris magna incididunt nostrud.",
-}
-}
+#### Get All Items
+
+```http
+  GET /api/all
 ```
 
+returns everything in the database.
 
-## Contributors:
+#### Get Single item
+
+```http
+  GET /api/${id}
+```
+
+| Route | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### Get **Categoried** products
+
+```http
+  GET /api/category/${category}
+```
+
+```java
+Categories = ["Mac", "iPhone", "iPad", "Apple Watch"]
+```
+
+| Route | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `category`      | `string` | **Required**. category of of item to fetch |
+
+#### Get **Series of** products
+
+```http
+  GET /api/series/${series} 
+```
+
+```java
+Series = ["MacBook Air","MacBook Pro" ,"MacBook Pro 13","MacBook Pro 14","MacBook Pro 16", "iPhone 13", "iPhone __", "Series 7", "Series __", "iMac"]
+```
+
+| Route | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `series`      | `string` | **Required**. category of of item to fetch |
+
+## Tech Stack
+
+**Client:** [`Next.js`]("https://github.com/vercel/next.js/"), [`Recoil`]("https://github.com/facebookexperimental/Recoil"), [`TailwindCSS`]("https://github.com/tailwindlabs/tailwindcss")
+
+**Server:**  [`MongoDB`]("https://github.com/mongodb/mongo")
 
 
-**[`Abhay Prajapati`](https://www.twitter.com/AbhayPrajapati_)**
+## Authors
 
-we are counting on you...
-
-### Ready to know about your view's share with us.
-
+- [`@AbhayPrajapati`](https://www.github.com/theabhayprajapti)

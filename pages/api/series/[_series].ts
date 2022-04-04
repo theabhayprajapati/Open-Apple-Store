@@ -17,13 +17,16 @@ export default async function handler(req:NextApiRequest, res:NextApiResponse) {
     // solve the array literal error.
     const m = JSON.parse(JSON.stringify(data))
     // console.log(data)
-    if(m==null){
+    if(m.length==0){
         res.status(404).json({
-            series: ["iPhone 13", "MacBook Air", "MacBook Pro"],
+            message: "⛔! try to enter proper series name",
+            "Series": ["MacBook Air","MacBook Pro" ,"MacBook Pro 13","MacBook Pro 14","MacBook Pro 16", "iPhone 13", "iPhone __", "Series 7", "Series __", "iMac"],
             reach_me_out: "twitter.com/abhayprajapati_",
         })
     }
-    console.log(m)
-    res.json(data)
+
+    res.json({
+        data: m
+    })
 }
 
