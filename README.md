@@ -65,4 +65,4 @@ Series = ["MacBook Air","MacBook Pro" ,"MacBook Pro 13","MacBook Pro 14","MacBoo
 
 ## Authors
 
-- [`@AbhayPrajapati`](https://www.github.com/theabhayprajapti)
+- [`@AbhayPrajapati`](https://www.github.com/theabhayprajapati)
